@@ -93,3 +93,6 @@ vcurl http://localhost:8080/admin/v2/persistent/public/default/my-topic/stats | 
 
 O Apache Pulsar é uma solução madura e altamente escalável para empresas que buscam uma plataforma confiável de mensagens e streaming em tempo real. Ele é eficaz em ambientes que exigem resiliência, alta disponibilidade e processamento de dados distribuído, sendo ideal para aplicações financeiras, monitoramento de redes e soluções IoT.
 
+## Referências
+- https://www.docker.com
+- https://pulsar.apache.org/docs/3.3.x/standalone-docker/
