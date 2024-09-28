@@ -68,9 +68,9 @@ A arquitetura do Apache Pulsar é composta por três componentes principais:
 
 ## Projeto
 ### Descrição
-- O reposiótio consiste em dois projetos em python:
--- producer.py: Emite mensagens para o consumidor.
--- consumer.py: Recebe as mensagens do emissor.
+O reposiótio consiste em dois projetos em python:
+- producer.py: Emite mensagens para o consumidor.
+- consumer.py: Recebe as mensagens do emissor.
 ### Download
 - Com o Git instalado, criar um diretório, abrir o terminal e colar o seguinte comando:
 ```bash
