@@ -24,6 +24,16 @@ Em 2016, a Yahoo decidiu compartilhar essa tecnologia com a comunidade open sour
 
 - **Suporte a Mensagens de Longa Retenção**: O Pulsar foi projetado para suportar retenção de dados de longo prazo, com políticas de armazenamento configuráveis.
 
+## Vantagens chave no design do Pulsar
+O Apache Pulsar, apesar de ser uma ferramenta poderosa para sistemas de mensagens em tempo real e processamento de eventos, possui algumas desvantagens que devem ser consideradas:
+
+- **Complexidade de Operação**: A arquitetura do Pulsar é mais complexa em comparação a outras plataformas de mensageria como o Kafka, devido à separação entre o serviço de mensageria e o armazenamento, o que pode exigir uma curva de aprendizado maior para administradores e desenvolvedores.
+- **Ecossistema Menor**: Embora esteja crescendo, o ecossistema de ferramentas e a comunidade do Pulsar ainda são menores que os de outras soluções mais maduras, como o Kafka. Isso pode dificultar a obtenção de suporte e a disponibilidade de ferramentas prontas para integração.
+- **Requisitos de Infraestrutura**: O Pulsar depende do Apache BookKeeper para armazenamento persistente, o que pode aumentar a complexidade da infraestrutura e os requisitos de hardware. A necessidade de gerenciar duas camadas distintas (mensageria e armazenamento) pode demandar mais recursos.
+- **Latência em Certos Cenários**: Em casos de alta carga ou em arquiteturas mal otimizadas, o Pulsar pode ter latências mais altas quando comparado a sistemas como o Kafka, especialmente para mensagens que exigem alta durabilidade.
+- **Integração de Ferramentas de Monitoramento**: A configuração de ferramentas de monitoramento e observabilidade, como o Prometheus e Grafana, pode ser mais complicada no Pulsar, exigindo mais customizações.
+- **Menor Adoção de Mercado**: Embora esteja crescendo, o Pulsar ainda não tem o mesmo nível de adoção que o Kafka, o que pode ser uma preocupação para empresas que desejam adotar tecnologias amplamente testadas e suportadas no mercado.
+
 ## Arquitetura
 
 A arquitetura do Apache Pulsar é composta por três componentes principais:
@@ -59,8 +69,8 @@ A arquitetura do Apache Pulsar é composta por três componentes principais:
 ## Projeto
 ### Descrição
 - O reposiótio consiste em dois projetos em python:
-- **producer.py**: Emite mensagens para o consumidor.
-- **consumer.py**: Recebe as mensagens do emissor.
+-- producer.py: Emite mensagens para o consumidor.
+-- consumer.py: Recebe as mensagens do emissor.
 ### Download
 - Com o Git instalado, criar um diretório, abrir o terminal e colar o seguinte comando:
 ```bash
